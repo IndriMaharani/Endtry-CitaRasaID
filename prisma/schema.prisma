@@ -1,0 +1,15 @@
+datasource db {
+  provider = "mysql" // Sesuaikan dengan database Anda (mysql, postgresql, sqlite, dll.)
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id       Int     @id @default(autoincrement())
+  name     String
+  category String
+  price    String
+}
