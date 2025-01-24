@@ -18,7 +18,7 @@ export default function ContactForm() {
             color: '#2F4F4F',
           }}
         >
-          Contact Us
+          Hubungi Kami
         </h2>
         <form
           action="https://formspree.io/f/your-form-id" // Ganti dengan ID Formspree Anda
