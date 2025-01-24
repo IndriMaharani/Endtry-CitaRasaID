@@ -9,14 +9,14 @@ export default function ContactForm() {
         }}
       >
         <h2
-          style={{
-            fontSize: '2.5rem',
-            fontWeight: 'bold',
-            textAlign: 'center',
-            marginBottom: '2rem',
-            fontFamily: "'Poppins', sans-serif",
-            color: '#2F4F4F',
-          }}
+        style={{
+          fontSize: '2.5rem',
+          fontWeight: 'bold',
+          textAlign: 'center',
+          marginBottom: '2rem',
+          fontFamily: "'Poppins', sans-serif",
+          color: '#2F4F4F',
+        }}
         >
           Hubungi Kami
         </h2>
