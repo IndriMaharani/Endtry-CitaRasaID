@@ -19,5 +19,4 @@ export default function Footer() {
       margin: 0,
       fontSize: '1.1rem',
     },
-  };
-  
+};
