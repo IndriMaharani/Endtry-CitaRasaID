@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-// Read all products
+// membaca Semua Produk
 export async function GET() {
   const products = await prisma.product.findMany();
   return new Response(JSON.stringify(products), {
@@ -10,8 +10,7 @@ export async function GET() {
   });
 }
 
-// Create a new product
-// Create a new product
+// Menambah Produk Baru
 export async function POST(request) {
   const newProduct = await request.json();
   const createdProduct = await prisma.product.create({
@@ -26,8 +25,7 @@ export async function POST(request) {
 
 
 
-// Update an existing product
-// Update an existing product
+// Memperbaharui Produk
 export async function PUT(request) {
   const updatedProduct = await request.json();
   const product = await prisma.product.update({
@@ -47,8 +45,7 @@ export async function PUT(request) {
 }
 
 
-// Delete a product
-// Delete a product
+// Menghapus Produk
 export async function DELETE(request) {
   const { id } = await request.json();
 

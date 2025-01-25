@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Categories from './components/Categories';
 import ProductList from './components/ProductList';
-import contact_form from './components/contact_form';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
         <Banner />
         <Categories onSelectCategory={setSelectedCategory} />
         <ProductList selectedCategory={selectedCategory} />
-        <contact_form />
+        <ContactForm />
       </main>
       <Footer />
     </div>
